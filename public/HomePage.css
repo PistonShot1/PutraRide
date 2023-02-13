@@ -1,0 +1,92 @@
+* {
+  font-family: 'Lexend Deca';
+}
+body {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    height: 97vh;
+    width: auto;
+}
+
+#map{
+  height: 100%;
+  width: 100%;
+  position:relative;
+  
+  }
+.from_to_pane{
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  width: 70%;
+  height: 25%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+div#from_to_content{
+  display:flex;
+  flex-direction: row;
+  column-gap: 8px; 
+}
+ #from_to_image, .from_to_input{
+  display: flex;
+  flex-direction: column;
+  
+}
+#from_to_image{
+  row-gap: 40px;
+  margin-top: 2px;
+}
+.from_to_input{
+  row-gap: 10px;
+}
+#circle1, #circle2{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+#circle1{
+  background-color:#D71616 ;
+}
+#circle2{
+  background-color: #00B2D9;
+
+}
+
+select{
+   border-left: none;
+   border-right: none;
+   border-top: none;
+   outline: none;
+   width: 150px;
+   border-bottom: 2px dashed #B3B3B3; /* taken from figma*/
+  }
+  
+input:focus{
+  caret-color: transparent;
+}
+::placeholder{
+  font-weight: bolder;
+}
+#confirm_button{
+  width: 190px;
+  height: 30px;
+  border-radius: 10px;
+  margin-top: 10px;
+  background-color:#FF3131;
+  color: #FFFFFF;
+  border: transparent;
+}
+
+
+
+

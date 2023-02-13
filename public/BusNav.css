@@ -1,0 +1,100 @@
+* {
+    font-family: 'Lexend Deca';
+  }
+  body {
+      -webkit-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+      height: 97vh;
+      width: auto;
+  }
+  
+  #map{
+    height: 100%;
+    width: 100%;
+    position:relative;
+    
+    }
+/* pane */
+  .from_to_pane{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    width: 70%;
+    height: 25%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 8px;
+  }
+  .from_to_pane2{
+    margin-left: 20px;
+    margin-top : 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    justify-content: center;
+
+    font-weight: 600;
+  }
+  /* back button */
+  .back_div{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 8px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #bus_details{
+
+  font-size: 11px;
+  
+  text-align: center;
+  color: #7165FF;
+  margin-left:20px;
+  }
+
+  #seat_label{
+    color: #909090;
+    font-size: 12px;
+  }
+  #time_label{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  #time_info{
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  #images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #line{
+    background-color: #B3B3B3;
+    margin: 1%;
+    width: 25%;
+    height: 1px;
+  }
+
+  #time_info{
+    column-gap: 20px;
+  }

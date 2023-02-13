@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <link rel="stylesheet" href="../public/BusNav.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script type="module" src="../public/BusNav2.js"></script>
+    <title>BusNavigation Page</title>
+</head>
+
+<body>
+
+    <div id="map"></div>
+    <div class="back_div"><ion-icon id="back_button" name="arrow-back-outline"></ion-icon></div>
+    <div class="from_to_pane">
+        <div class="from_to_pane2">
+            <div id="from_to_1">
+                <label>KTP-KPZ</label>
+                <label id="bus_details">[Bus Details]</label>
+            </div>
+            <label id="seat_label">Seat Availability</label>
+            <div id="images">
+                <img src="../public/Screenshot 2023-01-19 173241.jpeg" width="30%" height="10%">
+                <div id="line"></div>
+                <img src="../public/WhatsApp Image 2023-01-19 at 17.22.10.jpeg" >
+                
+            </div>
+            <div id="time_label">
+                <label>Arrival Time </label>
+                <label>Distance</label>
+                <label>Heading To</label>
+            </div>
+            <div id="time_info">
+                <label>12 Minutes</label>
+                <label>4.25km</label>
+                <label>KTP-KPZ</label>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- google map api -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI97pyYFLF15RxMDmm6vYOpMv803Bpdb8&callback=initMap&v=weekly"
+      defer></script>
+    
+</body>
+
+</html>

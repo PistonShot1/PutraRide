@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'> <!-- the api for the font-family-->
+    <link rel ="stylesheet" href="../public/register.css">
+    <script type="module" src="../public/register.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    <div class="screen-1">
+        <div class="logo2">
+            <img src="../public/PutraRide.svg" alt="PutraRide Logo" width="120" height="120" >
+        </div>
+            <form>
+                <div class="register_inputs">
+                    <div class="matric">
+                        <input type="text" name="matric" placeholder="Matric ID" id="matric_input" >
+                    </div>
+
+                    <div class="email">
+                          <input type="email" name="email" placeholder="Email" id="email_input">
+                    </div>
+                    
+                    <div class="password">
+                            <input id="pass_input1" type="password" name="password" placeholder="Password" autocomplete="on"/>
+                    </div>
+
+                    <div class="confirm_password">
+                            <input id="pass_input2" type="password" name="password" placeholder="Confirm Password" autocomplete="on"/>
+                    </div>
+
+                    
+                </div>
+            </form>
+            <button id="create" class="create">Create</button>
+            <div ><label id="register_status"></label></div>
+            <div class="footer"><label id="forgot_pass">Already have an account ?</label></div>
+            <button id="login">Login</button>
+        
+    
+    </div>
+</body>
+</html>

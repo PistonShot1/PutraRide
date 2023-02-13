@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <link rel="stylesheet" href="bus_stop_select.css">
+
+    <script src="../public/bus_stop_select.css"></script>
+    <script defer type="module" src="../public/bus_stop_select.js"></script>
+    
+    <title>Document</title>
+    
+    
+
+</head>
+<body>
+   
+        <div class="ion_icon">
+            <div><ion-icon id="ion_icon_back" name="arrow-back-outline"></ion-icon></div>
+            <div>Select a Bus Stop</div>
+            
+        </div>
+     <div class="screen-3">
+        <div id="bus_stop_list">
+             <!-- this is just temporary, supposedly it should retrieve bus stop from backend server, and use DOM to create -->
+            <!-- NEED UPDATES -->
+             <!--IMPORTANT NOTE : make it DOM, define correct number of buttons/ or can leave server to handle and create using DOM -->
+            <form id="submit_form">
+                <button id="dkap"type="submit" onclick=busStopID(this.id)>DKAP BUS STOP</button>
+                <button id="fsktm"type="submit"onclick=busStopID(this.id)>FSKTM BUS STOP</button>
+                <button id="k13"type="submit" onclick=busStopID(this.id)>K13 BUS STOP</button>
+                <button id="k17"type="submit" onclick=busStopID(this.id)>K17 BUS STOP</button>
+                <button id="kaa"type="submit" onclick=busStopID(this.id)>KAA BUS STOP</button>
+            </form>
+                     
+        </div>
+        
+    </div>
+
+
+    <!-- ion-icons import -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

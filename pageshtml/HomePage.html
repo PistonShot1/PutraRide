@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <link rel ="stylesheet" href="../public/HomePage.css">
+    
+    <script type="module" src="../public/HomePage.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    
+        <div id="map"></div>
+        <div class="from_to_pane">
+            <!-- form for POST request -->
+            <form action="/from_to" method="POST">
+                <div id="from_to_content">
+                    <div id="from_to_image">
+                        <div id="circle1"></div>
+                        <div id="circle2"></div>
+                    </div>
+        
+                    <div class="from_to_input">
+                        <label>From :</label>
+                        <div>
+                            <select name="from" id="from" >
+                                <option value="">Default</option>
+                                <option value="Serumpun">Serumpun</option>
+                                <option value="FBMK">FBMK</option>
+                                <option value="FSKTM">FSKTM</option>
+                                <option value="Fakulti Sains">Fakulti Sains</option>
+                                <option value="Fakulti Perhutanan">Fakulti Perhutanan</option>
+                                <option value="Sultan Abdul Samad Library">Sultan Abdul Samad Library</option>
+                                <option value="Central Parking">Central Parking</option>
+                                <option value="PFC/KPZ">PFC/KPZ</option>
+                            </select>
+                        </div>
+                        <label>To :</label>
+                        <div>
+                            <select name="to" id="to">
+                                <option value="">Select one</option>
+                                <option value="Serumpun">Serumpun</option>
+                                <option value="FBMK">FBMK</option>
+                                <option value="FSKTM">FSKTM</option>
+                                <option value="Fakulti Sains">Fakulti Sains</option>
+                                <option value="Fakulti Perhutanan">Fakulti Perhutanan</option>
+                                <option value="Sultan Abdul Samad Library">Sultan Abdul Samad Library</option>
+                                <option value="Central Parking">Central Parking</option>
+                                <option value="PFC/KPZ">PFC/KPZ</option>
+                            </select>
+                            <!-- <input id="to_input" type="text" placeholder="Please Select a Location"> -->
+                        </div>
+                    </div>
+                </div>
+                <div><button id="confirm_button" type="submit">Confirm</button></div>
+            </form>
+            
+        </div>
+        
+       
+        
+    
+        <!-- google map api -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCI97pyYFLF15RxMDmm6vYOpMv803Bpdb8&callback=initMap&v=weekly"
+      defer></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+
+/* ------------------------------------ */
+/* NOTE : don't change display properties */
+/* ------------------------------------ */
+* {
+    font-family: 'Lexend Deca';
+  }
+  
+  body {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #020202; /* color for background , body - irfan*/
+    height: 100vh;
+  }
+
+  /* this is the container that consist all the logo,inputs and buttons (currently white)  */
+  .screen-1 {
+    background: white;
+    padding: 2em;
+    padding-top: 1cm;
+    padding-bottom: 2cm;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    gap: 1.5em;
+    align-items: center;
+  }
+
+  /* for logo */
+  .screen-1 .logo2 {
+    display: block;
+    align-self: center;
+    clip-path: circle();
+  }
+  /* Welcome back label */
+  #welcome{
+    font-size: 20px;
+    color: #464444;
+    font-weight: bolder;
+  }
+  /* alignment and sizing between the input boxes*/
+  .screen-1 .login_inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+   width: fit-content;
+
+  }
+
+/* style for the input box of email and password */
+  div.email, div.password {
+    height: 35px;
+    width: 200px;
+    border-radius: 8px;
+    outline: #414040;
+    display: flex;
+    background-color: #F3F3F3;
+     box-shadow: 0px 2px 1px 0px #0000001F;
+  }
+ 
+ /* to remove horrible outline when input box is focused */
+  input {
+    border: none;
+    outline: none;
+    background-color: #F3F3F3;
+    margin-left: 10px;
+  }
+   /* display alignment for password input and the ion-icon(eye) */
+   div.password2, div.email2 {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* placeholder style for email */
+  .screen-1 .email input::-moz-placeholder {
+    color: black;
+    font-size: 0.9em;
+  }
+  .screen-1 .email input:-ms-input-placeholder {
+    color: black;
+    font-size: 0.9em;
+  }
+  .screen-1 .email input::placeholder {
+    color: black;
+    font-size: 0.9em;
+  }
+  .screen-1 .email ion-icon {
+    color: #4d4d4d;
+    margin-bottom: -0.2em;
+  }
+
+  /* placeholder style for password */
+  .screen-1 .password input::placeholder {
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+  }
+  
+  /* style for login button */
+  .screen-1 .login {
+    background: #C20000;
+    color: white;
+    box-shadow: 0px 4px 1px 0px #0000001F;
+
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    width: 200px;
+    height: 35px;
+    align-self: center;
+  }
+  
+  /* style for register button */
+  .screen-1 .register {
+    background: #F56E7D;
+    color: white;
+    padding: 0.8em;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    width: 200px;
+    align-self: center;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .screen-1 .footer {
+    display: flex;
+    align-self: center;
+    font-size: 0.7em;
+    color: #5e5e5e;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  
+  /* DOM elements , dont edit , ask Nanda if want to edit*/
+  #login_status {
+    display:flex;
+    align-self: center;
+    font-size: 0.7em;
+    color: red;
+    font-weight: bold;
+  }
+  #eye_button1{
+    margin-top: 2px;
+  }
+  #eye_button2{
+    margin-top: 2px;
+    display: none;
+  }
+
+  /* @media screen and (max-height: ) {
+    
+  } */
+    
+  
