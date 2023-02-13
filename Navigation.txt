@@ -1,0 +1,15 @@
+Naviagation.js
+ attributes
+ 1)markers[] : Constant
+ 2) DirectionsStatus : var
+ 3) geocoded_waypoints : var
+methods
+1)initMap() : Map
+2) google.map.Map(DOM Object)
+3) bounds()
+4) overview_polyline()
+5) addMarker(marker)
+6) maps.Infowindow()
+7) routes()
+8) vehicle()
+9) geocoder_status()
