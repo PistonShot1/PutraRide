@@ -1,8 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mysql = require('mysql')
-const mime = require('mime');
-const fs = require('fs')
 const app = express(); // creates an instance of express
 const port = 3000;
 
@@ -14,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json()); //to read json on server side
 app.use(express.json());
 
-//establishing connection to MySQL hosted to localhost environment
+//establishing connection to MySQL hosted locally
 /*
   for future usage,
   checkout connection pooling function, this is to enhance the performance of executing commands on a database.
@@ -39,21 +37,21 @@ app.listen(port,()=>{
 //handling GET requests
 app.get('/',(req, res)=>{
   
-  res.sendFile('register/register.html', { root: __dirname })
+  res.sendFile('pageshtml/register.html', { root: __dirname })
 });
 app.get('/login/',(req,res)=>{
-    res.sendFile('login/login.html', {root: __dirname})
+    res.sendFile('pageshtml/login.html', {root: __dirname})
 })
 
 app.get('/HomePage/',(req,res)=>{
-  res.sendFile('HomePage/HomePage.html', {root: __dirname})
+  res.sendFile('pageshtml/HomePage.html', {root: __dirname})
 })
 app.get('/Navigation',(req,res)=>{
-  res.sendFile('BusNavigation/BusNav.html', { root: __dirname })
+  res.sendFile('pageshtml/BusNav.html', { root: __dirname })
 
 })
 app.get('/Navigation_',(req,res)=>{
-  res.sendFile('BusNavigation/BusNav2.html', { root: __dirname })
+  res.sendFile('pageshtml/BusNav2.html', { root: __dirname })
 
 })
 app.get('/from-to-data.json',()=>{
@@ -67,7 +65,7 @@ app.post('/', (req, res) => {
     const uid = req.body.uid;
     const password = req.body.password
     RegisterQuery(connection, uid, email, matric,password) 
-    console.log(`Received string: ${email} and ${uid} and ${password} and ${matric} `); //testing if req reached
+    console.log(`Received string: ${email} and ${uid} and ${password} and ${matric} `); //testing if req reached, password need to be encrypted for future reference
     connection.end()
     
 });

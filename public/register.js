@@ -2,13 +2,7 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.12.1/firebas
 import { getAuth, createUserWithEmailAndPassword  } from 'https://www.gstatic.com/firebasejs/9.12.1/firebase-auth.js' ;
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBT9-q1HqKBAWkFPGuB6E-6dxP2BozGLYs",
-  authDomain: "login-page-1d5dd.firebaseapp.com",
-  projectId: "login-page-1d5dd",
-  storageBucket: "login-page-1d5dd.ap pspot.com",
-  messagingSenderId: "676280565741",
-  appId: "1:676280565741:web:9f134374f6494206c271e4",
-  measurementId: "G-FW1Z4PZK7H"
+  //get your config and paste here
 }
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
